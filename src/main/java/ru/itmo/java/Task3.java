@@ -32,6 +32,7 @@ public class Task3 {
     int getMaxProduct(int[] inputArray) {
      if (inputArray == null || inputArray.length == 0) return 0;
      if (inputArray.length == 1) return inputArray[0];
+     if (inputArray.length == 2) return inputArray[0] * inputArray[1];
 
      int prevMinValue = Integer.MAX_VALUE;
      int minValue = Integer.MAX_VALUE;
